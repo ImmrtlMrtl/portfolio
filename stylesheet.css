@@ -1,0 +1,190 @@
+body {
+	background-color:#2E2828;
+	color:white;
+	margin:0px;
+}
+
+span {
+	color:white;
+	font-size:24px;
+}
+
+#Header {
+	position:fixed;
+	width:100%;
+	height:125px;
+	background-color:#FF7EDC;
+	border-bottom-color:#16917B;
+	border-bottom-width:5px;
+	border-bottom-style:solid;
+	z-index:0;
+}
+
+#Title {
+	position:absolute;
+	font-family:Verdana, Geneva, sans-serif;
+	text-decoration:none;
+	text-align:left;
+	color:#2E2828;
+	margin-left:1%;
+	top:10%;
+	font-size:40px;
+	font-weight:bold;
+}
+
+#Logo a:link, a:visited {
+	height:150px;
+	width:150px;
+	position:fixed;
+	border-color:#16917B;
+	background-color:white;
+	border-style:solid;
+	border-width:8px;
+	border-radius:200px;
+	text-align:center;
+	text-decoration:none;
+	color:#16917B;
+	font-family:Verdana, Geneva, sans-serif;
+	z-index:4;
+	margin-left:45%;
+	top:1%;
+}
+
+#Logo a:hover, a:active {
+	border-color:#5F9C75;
+	text-decoration:none;
+}
+
+#Menu {
+	position:relative;
+	text-align:right;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	font-weight:bold;
+	color:#16917B;
+	margin-right:1%;
+	top:65%;
+}
+
+#Menu a:link, a:visited {
+	text-decoration:none;
+	color:white;
+}
+
+#Menu a:hover, a:active {
+	text-decoration:none;
+	color:#0C6144;
+}
+
+#Illustration {
+	position:absolute;
+	width:100%;
+	top:225px;
+	z-index:-1;
+}
+
+#IllustrationLabel {
+	position:absolute;
+	margin-left:43.6%;
+	top:180px;
+	color:white;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	z-index:-1;
+}
+
+ /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin:auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:#FF7EDC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#Footer {
+	position:fixed;
+	bottom:0%;
+	background-color:#FF7EDC;
+	border-top-color:#16917B;
+	border-top-width:5px;
+	border-top-style:solid;
+	height:20px;
+	width:100%;
+}
+
+#BottomID {
+	color:white;
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	margin-left:2px;
+}
