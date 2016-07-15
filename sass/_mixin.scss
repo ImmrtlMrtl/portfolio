@@ -1,0 +1,71 @@
+/*************************
+Mixin color
+*************************/
+$coopred: #e73817;
+$takuhai_main: #f98d2d;
+$bento_main: #643200;
+
+$img_path: '../img/';
+
+/*************************
+Mixin Link
+*************************/
+@mixin linkColor($color) {
+  color: $color;
+  &:hover, &:active, &:focus {
+    color: lighten($color, 20%);
+  }
+}
+/*************************
+Mixin opacity
+*************************/
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacityIE: $opacity * 100;
+  filter: alpha(opacity=$opacityIE);
+}
+/*************************
+Mixin border radius
+*************************/
+@mixin border_radius($value: 4px) {
+    -webkit-border-radius: $value;
+       -moz-border-radius: $value;
+        -ms-border-radius: $value;
+            border-radius: $value;
+}
+/*************************
+Mixin font size
+*************************/
+@mixin fts($fts, $lin: 24) {
+  $rem: $fts / 10;
+  $linS: $lin / $fts;
+  font-size: #{$fts}px;
+  font-size: #{$rem}rem;
+  line-height: $linS;
+}
+/*************************
+Mixin font size
+*************************/
+$base_width: 1024px;
+
+/*************************
+Mixin box sizing
+*************************/
+@mixin border_sizing {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  -ms-box-sizing: content-box
+}
+/*************************
+Mixin Clearfix
+*************************/
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
