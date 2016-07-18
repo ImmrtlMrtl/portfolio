@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/lightbox.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/common.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -29,23 +30,57 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#works">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="wrapper">
-            <ul class="portfolio">
-                <li><img src="img/portfolio-mask.png"></li>
-                <li><img src="img/portfolio-mask.png"></li>
-                <li><img src="img/portfolio-mask.png"></li>
-                <li><img src="img/portfolio-mask.png"></li>
-            </ul>
-        </div>
+            <section id="works" class="wrapper">
+                <ul class="portfolio">
+                    <li><a href="img/dancer.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/dancer-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                    <li><a href="img/example-horiz.jpg" data-lightbox="image-1" data-title="Optional caption."><img src="img/example-thumb.png" alt="Alt text here." /></a></li>
+                </ul>
+            </section>
+            <section id="about">
+                <div class="wrapper">
+                    <h2>About Me</h2>
+                    <img src="img/example-horiz.jpg" alt="" />
+                    <p>Michelle Lumbert is an animator. And kinda cute.</p>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="wrapper">
+                    <h2>Contact</h2>
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                      <div class="row">
+                        <input id="name" class="tf" name="" type="text" placeholder="Name" maxlength="30"/>
+                    		<input id="mail" class="tf" name="" type="email" placeholder="Email Address" maxlength="50"/>
+                      </div>
+                      <div class="row">
+                    		<input id="company" class="tf" name="" type="text" value="" placeholder="Company Name" maxlength="50"/></textarea>
+                    		<input id="phone" class="tf" name="" type="phone" value="" placeholder="Phone Number" maxlength="20"/></textarea>
+                    	</div>
+                      <div class="row">
+                    		<textarea id="context" class="tf" name="message" rows="7" cols="30" placeholder="Message" maxlength="4000"></textarea>
+                    	</div>
+                    	<button type="button" id="btnOK" class="submit-btn">SEND</button>
+                    </form>
+                </div>
+            </section>
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

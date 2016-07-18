@@ -23,7 +23,7 @@ Mixin box sizing
 Mixin Clearfix
 *************************/
 body {
-  background: #2e2828;
+  background: #2A363B;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -33,7 +33,7 @@ body {
   width: 100%;
   height: 50px;
   margin: 0 auto;
-  background: #ff7edc;
+  background: #E84A5F;
 }
 
 .header .header_container {
@@ -45,7 +45,100 @@ body {
 
 .wrapper {
   width: 1024px;
-  margin: 90px auto 0px;
+  margin: 0 auto;
+}
+
+#works {
+  margin-top: 90px;
+}
+
+#about {
+  background: #FECEA8;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#about h2 {
+  color: #2A363B;
+}
+
+#about p {
+  color: #2A363B;
+}
+
+#contact {
+  background: #99B898;
+  padding: 40px 0;
+  text-align: center;
+}
+
+input {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.33333;
+  height: 36px;
+  width: 40%;
+  border: 1px solid #000;
+  padding: 0 4px;
+  margin: 2% 1%;
+  min-width: 250px;
+}
+
+textarea {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.33333;
+  height: 250px;
+  width: 83%;
+  border: 1px solid #000;
+  padding: 0 4px;
+  margin: 2% 1%;
+  min-width: 250px;
+}
+
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+  outline: none;
+}
+
+#contact_form button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  height: 40px;
+  width: 84%;
+  margin-top: 20px;
+  background: #4A90E2;
+  border: none;
+  color: #fff;
+}
+
+#contact_form button:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  cursor: pointer;
 }
 
 .logo {
@@ -57,7 +150,8 @@ body {
   transform: translateY(-50%);
 }
 
-.logo h1, .logo p {
+.logo h1,
+.logo p {
   display: inline;
   margin-right: 24px;
 }
@@ -112,12 +206,12 @@ a {
 }
 
 .portfolio {
-  max-width: 600px;
   margin: 0 auto;
   padding: 0;
   font-size: 0px;
   font-size: 0rem;
   line-height: Infinity;
+  text-align: center;
 }
 
 .portfolio li {
@@ -126,17 +220,34 @@ a {
   margin-bottom: 40px;
 }
 
-.portfolio li:nth-child(even) {
-  margin-right: 0;
-}
-
 @media screen and (max-width: 1024px) {
   .header_container {
     width: 100% !important;
   }
+  .wrapper {
+    width: 100% !important;
+  }
+  .portfolio li {
+    margin: 0 20px 40px;
+  }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (min-width: 1024px) {
+  .portfolio li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    margin-left: 8%;
+  }
+  .logo p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 656px) {
   .mobile_btn {
     content: "";
     background: url("../img/mobileIcon.png") no-repeat center #ff7edc;
