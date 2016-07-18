@@ -33,6 +33,9 @@ body {
     p {
         color: #2A363B;
     }
+    img {
+        width: 100%;
+    }
 }
 #contact {
     background: #99B898;
@@ -94,7 +97,7 @@ textarea {
     height: 40px;
     width: 84%;
     margin-top: 20px;
-    background: #4A90E2;
+    background: #E84A5F;
     border: none;
     color: #fff;
     &:hover {
@@ -103,6 +106,21 @@ textarea {
         cursor: pointer;
     }
 }
+///-----Footer-----///
+footer {
+    display: table;
+    width: 100%;
+    background: #E84A5F;
+    p {
+        color: #FFF;
+        text-align: center;
+        display: table-cell;
+    }
+    a {
+        color: #FECEA8;
+    }
+}
+///-----Footer END-----///
 .logo {
     // line-height: 24px;
     position: absolute;
@@ -184,7 +202,7 @@ a {
 }
 @media screen and (max-width: 960px) {
     h1 {
-        margin-left: 8%;
+        margin-left: 8px;
     }
     .logo p {
         display: none;
